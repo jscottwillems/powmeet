@@ -1,24 +1,20 @@
+$("#submit").on("click", function (event) {
+    event.preventDefault();
 
-// You should save your application's data inside of `app/data/friends.js` as an array of objects. Each of these objects should roughly follow the format below.
-
-//```json
-//{
- // "name":"Ahmed",
- // "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
- // "scores":[
- //     5,
- //     1,
- //     4,
- //     4,
- //     5,
- //     1,
- //     2,
- //     5,
- //     4,
- //     1
- //  ]
-// }
-
-var friends = [];
-
-
+    var userData = {
+        name: $("#name").val(),
+        photo: $("photo").val(),
+        scores: [
+            $('#q1').val(),
+            $('#q2').val(),
+            $('#q3').val(),
+            $('#q4').val(),
+            $('#q5').val(),
+            $('#q6').val(),
+            $('#q7').val(),
+            $('#q8').val(),
+            $('#q9').val(),
+            $('#q10').val(),
+        ]
+    }
+})

@@ -5,13 +5,17 @@ body {
 
 .navbar {
     background: #041e42;
-    color: #ffc220;
 }
 
 .container {
     margin-top:30px;
-    margin-bottom:30px;
-    background: #e5e7ebd5;
+    margin-bottom:10px;
+    background: #e5e7ebea;
+}
+
+.titleLink:link {
+    text-decoration: none;
+    color: #ffc220;
 }
 
 #title {
@@ -28,4 +32,5 @@ body {
 
 .jumbotron {
     margin-top: 30px;
+    background: #e5e7eb00;
 }
