@@ -1,0 +1,31 @@
+body {
+    background: url("assets/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background: #041e42;
+    color: #ffc220;
+}
+
+.container {
+    margin-top:30px;
+    margin-bottom:30px;
+    background: #e5e7ebd5;
+}
+
+#title {
+    margin-left: 50px;
+    margin-right: auto;
+    font-size: 3em;
+}
+
+#logo {
+    margin-right: 50px;
+    margin-left: auto;
+    width: 125px;
+}
+
+.jumbotron {
+    margin-top: 30px;
+}
