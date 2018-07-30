@@ -1,3 +1,5 @@
+var friends = [];
+
 $("#submit").on("click", function (event) {
     event.preventDefault();
 
@@ -17,4 +19,7 @@ $("#submit").on("click", function (event) {
             $('#q10').val(),
         ]
     }
+    
+    friends.push(userData);
+
 })
