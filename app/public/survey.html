@@ -164,7 +164,8 @@
         <h3>
             <strong>Question 10</strong>
         </h3>
-        <h4>You would have no problem dinning on Quarter Pounders, french fries and ice cold Coca-Cola for dinner every night of the week.</h4>
+        <h4>You would have no problem dinning on Quarter Pounders, french fries and ice cold Coca-Cola for dinner every night
+            of the week.</h4>
         <select class="chosen-select" id="q10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -190,6 +191,48 @@
         </footer>
 
     </div>
+
+    <script>
+
+        require("../data/friends.js")
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $('#q1').val(),
+                    $('#q2').val(),
+                    $('#q3').val(),
+                    $('#q4').val(),
+                    $('#q5').val(),
+                    $('#q6').val(),
+                    $('#q7').val(),
+                    $('#q8').val(),
+                    $('#q9').val(),
+                    $('#q10').val(),
+                ]
+            }
+
+            friends.push(userData);
+
+            console.log(userData);
+
+            $('#q1').val("");
+            $('#q2').val("");
+            $('#q3').val("");
+            $('#q4').val("");
+            $('#q5').val("");
+            $('#q6').val("");
+            $('#q7').val("");
+            $('#q8').val("");
+            $('#q9').val("");
+            $('#q10').val("");
+        })
+
+    </script>
 
     <script type="text/javascript" src="../data/server.js"></script>
 
